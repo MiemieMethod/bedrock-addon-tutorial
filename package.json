@@ -1,0 +1,17 @@
+{
+  "name": "bedrock-addon-tutorial",
+  "version": "1.0.0",
+  "description": "Minecraft Bedrock Edition Addon Tutorial",
+  "main": "index.js",
+  "repository": "https://github.com/MiemieMethod/bedrock-addon-tutorial.git",
+  "author": "MiemieMethod <40489495+MiemieMethod@users.noreply.github.com>",
+  "license": "CC-BY-NC-SA-4.0",
+  "private": false,
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.46"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
