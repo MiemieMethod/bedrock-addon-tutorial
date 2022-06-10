@@ -5,7 +5,7 @@ module.exports = {
     lang: 'zh-CN',
     title: '附加包教程',
     description: 'Minecraft基岩版附加包教程',
-    head: [['link', { rel: 'icon', href: '/bedrock-addon-tutorial/images/logo.png' }]],
+    head: [['link', { rel: 'icon', href: '/bedrock-addon-tutorial/images/favicon.png' }]],
     
     theme: defaultTheme({
         logo: '/images/logo.png',
