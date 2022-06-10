@@ -1,7 +1,7 @@
-const { defaultTheme } = require('@vuepress/theme-default')
+const { defaultTheme } = require('@vuepress/theme-default');
 
 module.exports = {
-    base: '/bedrock-addon-tutorial/',
+    base: '/bedrock-addon-tutorial/',
     lang: 'zh-CN',
     title: '附加包教程',
     description: 'Minecraft基岩版附加包教程',
@@ -286,4 +286,4 @@ module.exports = {
         toggleDarkMode: '切换夜间模式',
         toggleSidebar: '切换侧边栏',
     }),
-}
+};
