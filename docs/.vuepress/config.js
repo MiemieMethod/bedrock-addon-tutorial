@@ -18,40 +18,131 @@ module.exports = {
             },
             {
               text: '入门教程',
+              activeMatch: '^/primer/',
               children: [
-                /*
                 {
-                  text: 'VuePress',
+                  text: '第0章 认识JSON',
                   children: [
-                    '/zh/reference/cli.md',
-                    '/zh/reference/config.md',
-                    '/zh/reference/frontmatter.md',
-                    '/zh/reference/components.md',
-                    '/zh/reference/plugin-api.md',
-                    '/zh/reference/theme-api.md',
-                    '/zh/reference/client-api.md',
-                    '/zh/reference/node-api.md',
+                    '/primer/sec0.1.md',
                   ],
                 },
                 {
-                  text: '打包工具',
+                  text: '第1章 制作第一个附加包',
                   children: [
-                    '/zh/reference/bundler/vite.md',
-                    '/zh/reference/bundler/webpack.md',
+                    '/primer/sec1.1.md',
+                    '/primer/sec1.2.md',
+                    '/primer/sec1.3.md',
+                    '/primer/sec1.4.md',
                   ],
                 },
                 {
-                  text: '默认主题',
+                  text: '第2章 附加包的基本功能',
                   children: [
-                    '/zh/reference/default-theme/config.md',
-                    '/zh/reference/default-theme/frontmatter.md',
-                    '/zh/reference/default-theme/components.md',
-                    '/zh/reference/default-theme/markdown.md',
-                    '/zh/reference/default-theme/styles.md',
-                    '/zh/reference/default-theme/extending.md',
+                    '/primer/sec2.1.md',
+                    '/primer/sec2.2.md',
+                    '/primer/sec2.3.md',
+                    '/primer/sec2.4.md',
                   ],
                 },
-              */
+                {
+                  text: '第3章 修改原版',
+                  children: [
+                    '/primer/sec3.1.md',
+                    '/primer/sec3.2.md',
+                    '/primer/sec3.3.md',
+                  ],
+                },
+                {
+                  text: '第4章 自定义物品',
+                  children: [
+                    '/primer/sec4.1.md',
+                    '/primer/sec4.2.md',
+                    '/primer/sec4.3.md',
+                  ],
+                },
+                {
+                  text: '第5章 自定义方块',
+                  children: [
+                    '/primer/sec5.1.md',
+                    '/primer/sec5.2.md',
+                    '/primer/sec5.3.md',
+                  ],
+                },
+                {
+                  text: '第6章 自定义实体',
+                  children: [
+                    '/primer/sec6.1.md',
+                    '/primer/sec6.2.md',
+                    '/primer/sec6.3.md',
+                    '/primer/sec6.4.md',
+                    '/primer/sec6.5.md',
+                    '/primer/sec6.6.md',
+                    '/primer/sec6.7.md',
+                  ],
+                },
+                {
+                  text: '第7章 自定义粒子',
+                  children: [
+                    '/primer/sec7.1.md',
+                    '/primer/sec7.2.md',
+                    '/primer/sec7.3.md',
+                  ],
+                },
+                {
+                  text: '第8章 自定义世界生成',
+                  children: [
+                    '/primer/sec8.1.md',
+                    '/primer/sec8.2.md',
+                    '/primer/sec8.3.md',
+                  ],
+                },
+                {
+                  text: '第9章 命令系统',
+                  children: [
+                    '/primer/sec9.1.md',
+                    '/primer/sec9.2.md',
+                    '/primer/sec9.3.md',
+                  ],
+                },
+                {
+                  text: '第10章 着色器',
+                  children: [
+                    '/primer/sec10.1.md',
+                    '/primer/sec10.2.md',
+                    '/primer/sec10.3.md',
+                  ],
+                },
+                {
+                  text: '第11章 UI',
+                  children: [
+                    '/primer/sec11.1.md',
+                    '/primer/sec11.2.md',
+                    '/primer/sec11.3.md',
+                  ],
+                },
+                {
+                  text: '第12章 自定义皮肤',
+                  children: [
+                    '/primer/sec12.1.md',
+                    '/primer/sec12.2.md',
+                  ],
+                },
+                {
+                  text: '第13章 编辑世界',
+                  children: [
+                    '/primer/sec13.1.md',
+                    '/primer/sec13.2.md',
+                    '/primer/sec13.3.md',
+                  ],
+                },
+                {
+                  text: '第14章 发布作品',
+                  children: [
+                    '/primer/sec14.1.md',
+                    '/primer/sec14.2.md',
+                    '/primer/sec14.3.md',
+                  ],
+                },
               ],
             },
             {
@@ -140,23 +231,129 @@ module.exports = {
         // sidebar
         sidebar: {
             '/primer/': [
-              /*{
-                text: '指南',
-                children: [
-                  '/zh/guide/README.md',
-                  '/zh/guide/getting-started.md',
-                  '/zh/guide/configuration.md',
-                  '/zh/guide/page.md',
-                  '/zh/guide/markdown.md',
-                  '/zh/guide/assets.md',
-                  '/zh/guide/i18n.md',
-                  '/zh/guide/deployment.md',
-                  '/zh/guide/theme.md',
-                  '/zh/guide/plugin.md',
-                  '/zh/guide/bundler.md',
-                  '/zh/guide/migration.md',
-                ],
-              },*/
+                {
+                  text: '第0章 认识JSON',
+                  children: [
+                    '/primer/sec0.1.md',
+                  ],
+                },
+                {
+                  text: '第1章 制作第一个附加包',
+                  children: [
+                    '/primer/sec1.1.md',
+                    '/primer/sec1.2.md',
+                    '/primer/sec1.3.md',
+                    '/primer/sec1.4.md',
+                  ],
+                },
+                {
+                  text: '第2章 附加包的基本功能',
+                  children: [
+                    '/primer/sec2.1.md',
+                    '/primer/sec2.2.md',
+                    '/primer/sec2.3.md',
+                    '/primer/sec2.4.md',
+                  ],
+                },
+                {
+                  text: '第3章 修改原版',
+                  children: [
+                    '/primer/sec3.1.md',
+                    '/primer/sec3.2.md',
+                    '/primer/sec3.3.md',
+                  ],
+                },
+                {
+                  text: '第4章 自定义物品',
+                  children: [
+                    '/primer/sec4.1.md',
+                    '/primer/sec4.2.md',
+                    '/primer/sec4.3.md',
+                  ],
+                },
+                {
+                  text: '第5章 自定义方块',
+                  children: [
+                    '/primer/sec5.1.md',
+                    '/primer/sec5.2.md',
+                    '/primer/sec5.3.md',
+                  ],
+                },
+                {
+                  text: '第6章 自定义实体',
+                  children: [
+                    '/primer/sec6.1.md',
+                    '/primer/sec6.2.md',
+                    '/primer/sec6.3.md',
+                    '/primer/sec6.4.md',
+                    '/primer/sec6.5.md',
+                    '/primer/sec6.6.md',
+                    '/primer/sec6.7.md',
+                  ],
+                },
+                {
+                  text: '第7章 自定义粒子',
+                  children: [
+                    '/primer/sec7.1.md',
+                    '/primer/sec7.2.md',
+                    '/primer/sec7.3.md',
+                  ],
+                },
+                {
+                  text: '第8章 自定义世界生成',
+                  children: [
+                    '/primer/sec8.1.md',
+                    '/primer/sec8.2.md',
+                    '/primer/sec8.3.md',
+                  ],
+                },
+                {
+                  text: '第9章 命令系统',
+                  children: [
+                    '/primer/sec9.1.md',
+                    '/primer/sec9.2.md',
+                    '/primer/sec9.3.md',
+                  ],
+                },
+                {
+                  text: '第10章 着色器',
+                  children: [
+                    '/primer/sec10.1.md',
+                    '/primer/sec10.2.md',
+                    '/primer/sec10.3.md',
+                  ],
+                },
+                {
+                  text: '第11章 UI',
+                  children: [
+                    '/primer/sec11.1.md',
+                    '/primer/sec11.2.md',
+                    '/primer/sec11.3.md',
+                  ],
+                },
+                {
+                  text: '第12章 自定义皮肤',
+                  children: [
+                    '/primer/sec12.1.md',
+                    '/primer/sec12.2.md',
+                  ],
+                },
+                {
+                  text: '第13章 编辑世界',
+                  children: [
+                    '/primer/sec13.1.md',
+                    '/primer/sec13.2.md',
+                    '/primer/sec13.3.md',
+                  ],
+                },
+                {
+                  text: '第14章 发布作品',
+                  children: [
+                    '/primer/sec14.1.md',
+                    '/primer/sec14.2.md',
+                    '/primer/sec14.3.md',
+                  ],
+                },
             ],
             '/advanced/': [
               /*{
