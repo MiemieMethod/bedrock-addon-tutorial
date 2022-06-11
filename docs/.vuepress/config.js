@@ -148,51 +148,51 @@ module.exports = {
             {
               text: '进阶教程',
               children: [
-                /*
                 {
-                  text: '常用功能',
+                  text: '第0章 认识JS',
                   children: [
-                    '/zh/reference/plugin/back-to-top.md',
-                    '/zh/reference/plugin/container.md',
-                    '/zh/reference/plugin/external-link-icon.md',
-                    '/zh/reference/plugin/google-analytics.md',
-                    '/zh/reference/plugin/medium-zoom.md',
-                    '/zh/reference/plugin/nprogress.md',
-                    '/zh/reference/plugin/register-components.md',
+                    '/advanced/sec0.1.md',
+                    '/advanced/sec0.2.md',
+                    '/advanced/sec0.3.md',
+                    '/advanced/sec0.4.md',
+                    '/advanced/sec0.5.md',
+                    '/advanced/sec0.6.md',
+                    '/advanced/sec0.7.md',
+                    '/advanced/sec0.8.md',
+                    '/advanced/sec0.9.md',
+                    '/advanced/sec0.10.md',
+                    '/advanced/sec0.11.md',
+                    '/advanced/sec0.12.md',
+                    '/advanced/sec0.13.md',
+                    '/advanced/sec0.14.md',
+                    '/advanced/sec0.15.md',
                   ],
                 },
                 {
-                  text: '内容搜索',
+                  text: '第1章 脚本使能的附加包',
                   children: [
-                    '/zh/reference/plugin/docsearch.md',
-                    '/zh/reference/plugin/search.md',
+                    '/advanced/sec1.1.md',
+                    '/advanced/sec1.2.md',
+                    '/advanced/sec1.3.md',
+                    '/advanced/sec1.4.md',
+                    '/advanced/sec1.5.md',
                   ],
                 },
                 {
-                  text: 'PWA',
+                  text: '第2章 进阶的数据驱动的附加包',
                   children: [
-                    '/zh/reference/plugin/pwa.md',
-                    '/zh/reference/plugin/pwa-popup.md',
+                    '/advanced/sec2.1.md',
+                    '/advanced/sec2.2.md',
+                    '/advanced/sec2.3.md',
+                    '/advanced/sec2.4.md',
                   ],
                 },
                 {
-                  text: '语法高亮',
+                  text: '第3章 数据与脚本的联动',
                   children: [
-                    '/zh/reference/plugin/prismjs.md',
-                    '/zh/reference/plugin/shiki.md',
+                    '/advanced/sec3.1.md',
                   ],
                 },
-                {
-                  text: '主题开发',
-                  children: [
-                    '/zh/reference/plugin/active-header-links.md',
-                    '/zh/reference/plugin/git.md',
-                    '/zh/reference/plugin/palette.md',
-                    '/zh/reference/plugin/theme-data.md',
-                    '/zh/reference/plugin/toc.md',
-                  ],
-                },
-              */
               ],
             },
             {
@@ -356,25 +356,51 @@ module.exports = {
                 },
             ],
             '/advanced/': [
-              /*{
-                text: '深入',
-                children: [
-                  '/zh/advanced/architecture.md',
-                  '/zh/advanced/plugin.md',
-                  '/zh/advanced/theme.md',
-                ],
-              },
-              {
-                text: 'Cookbook',
-                children: [
-                  '/zh/advanced/cookbook/README.md',
-                  '/zh/advanced/cookbook/usage-of-client-config.md',
-                  '/zh/advanced/cookbook/adding-extra-pages.md',
-                  '/zh/advanced/cookbook/making-a-theme-extendable.md',
-                  '/zh/advanced/cookbook/passing-data-to-client-code.md',
-                  '/zh/advanced/cookbook/markdown-and-vue-sfc.md',
-                ],
-              },*/
+                {
+                  text: '第0章 认识JS',
+                  children: [
+                    '/advanced/sec0.1.md',
+                    '/advanced/sec0.2.md',
+                    '/advanced/sec0.3.md',
+                    '/advanced/sec0.4.md',
+                    '/advanced/sec0.5.md',
+                    '/advanced/sec0.6.md',
+                    '/advanced/sec0.7.md',
+                    '/advanced/sec0.8.md',
+                    '/advanced/sec0.9.md',
+                    '/advanced/sec0.10.md',
+                    '/advanced/sec0.11.md',
+                    '/advanced/sec0.12.md',
+                    '/advanced/sec0.13.md',
+                    '/advanced/sec0.14.md',
+                    '/advanced/sec0.15.md',
+                  ],
+                },
+                {
+                  text: '第1章 脚本使能的附加包',
+                  children: [
+                    '/advanced/sec1.1.md',
+                    '/advanced/sec1.2.md',
+                    '/advanced/sec1.3.md',
+                    '/advanced/sec1.4.md',
+                    '/advanced/sec1.5.md',
+                  ],
+                },
+                {
+                  text: '第2章 进阶的数据驱动的附加包',
+                  children: [
+                    '/advanced/sec2.1.md',
+                    '/advanced/sec2.2.md',
+                    '/advanced/sec2.3.md',
+                    '/advanced/sec2.4.md',
+                  ],
+                },
+                {
+                  text: '第3章 数据与脚本的联动',
+                  children: [
+                    '/advanced/sec3.1.md',
+                  ],
+                },
             ],
             '/peak/': [
               /*{
