@@ -1,4 +1,5 @@
 const { defaultTheme } = require('@vuepress/theme-default');
+const { docsearchPlugin } = require('@vuepress/plugin-docsearch');
 
 module.exports = {
     base: '/bedrock-addon-tutorial/',
@@ -509,4 +510,11 @@ module.exports = {
         toggleDarkMode: '切换夜间模式',
         toggleSidebar: '切换侧边栏',
     }),
+
+    plugins: [
+        /*docsearchPlugin({
+            // 配置项
+        }),*/
+        '@vuepress/plugin-html-redirect',
+    ]
 };
