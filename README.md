@@ -1,5 +1,5 @@
 # bedrock-addon-tutorial
-[![CC by-nc-sa 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa] 
+[![CC by-nc-sa 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 ![issues](https://img.shields.io/github/issues/MiemieMethod/bedrock-addon-tutorial)
 ![contributors](https://img.shields.io/github/contributors-anon/MiemieMethod/bedrock-addon-tutorial)
 
