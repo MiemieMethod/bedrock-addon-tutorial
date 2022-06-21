@@ -1,0 +1,1 @@
+const e={key:"v-cecc9be0",path:"/primer/sec4.1.html",title:"\u81EA\u5B9A\u4E49\u65E7\u7248\u683C\u5F0F\u7269\u54C1",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1655819696e3,contributors:[{name:"MiemieMethod",email:"40489495+MiemieMethod@users.noreply.github.com",commits:1}]},filePathRelative:"primer/sec4.1.md"};export{e as data};
