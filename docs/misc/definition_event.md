@@ -1,5 +1,7 @@
 # 定义事件
 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc-sa.svg" /></a>
+
 **定义事件**（**Definition Event**）是一种可以用于实体、方块和物品的JSON定义中的事件。
 
 ## 默认值

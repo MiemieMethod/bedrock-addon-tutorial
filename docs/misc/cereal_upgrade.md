@@ -1,8 +1,10 @@
 # 物品/方块数据驱动升级版本控制
 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc-sa.svg" /></a>
+
 ## item
 
-需要验证：`format_version`不支持`[1, 16, 100]`的写法
+`format_version`不支持`[1, 16, 100]`的写法
 
 ```json
 item:1.16.100:{
@@ -19,7 +21,7 @@ item:1.16.100:{
 
 ## block
 
-需要验证：`format_version`不支持`[1, 16, 100]`的写法
+`format_version`不支持`[1, 16, 100]`的写法
 
 ```json
 block:1.16.100:{
@@ -165,7 +167,7 @@ object
 
 ### 升级成为 1.18.0..
 
-删去`repair_items`的字符串数组格式{{verify}}。
+删去`repair_items`的字符串数组格式。
 
 ```json
 minecraft:repairable "minecraft:repairable"
@@ -279,7 +281,7 @@ object
 
 ### 升级成为 1.19.10..
 
-如果存在`enabled`，用`enabled`的值替换整个对象{{verify}}。
+如果存在`enabled`，用`enabled`的值替换整个对象。
 
 ```json
 block_aim_collision "minecraft:aim_collision"
@@ -366,7 +368,7 @@ object
 
 ### 升级成为 1.19.10..
 
-如果存在`enabled`，用`enabled`的值替换整个对象{{verify}}，并重命名为`minecraft:collision_box`。
+如果存在`enabled`，用`enabled`的值替换整个对象，并重命名为`minecraft:collision_box`。
 
 ```json
 block_collision "minecraft:collision_box"
