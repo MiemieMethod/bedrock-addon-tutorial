@@ -6,7 +6,7 @@ externalLinkIcon: false
 
 [![CC by-nc-sa 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 [![issues][issues-shield]][issues]
-![contributors][contributors-shield]
+[![contributors][contributors-shield]][contributors]
 
 欢迎来到Minecraft基岩版附加包教程三部曲。本教程分为《入门教程》《进阶教程》与《登峰教程》三个篇章。每个篇章适用的教学对象皆不相同。《入门教程》适用于对附加包一无所知的初学者，《进阶教程》适用于了解了一定的附加包内容后选择学习脚本或更高级的数据驱动用法的有一定经验的开发者，《登峰教程》适用于已经对绝大部分附加包内容有了适当的了解，渴望完全地学习附加包开发的附加包研究者。
 
@@ -26,4 +26,5 @@ Minecraft附加包是一种在Minecraft基岩版中能够对游戏进行修改�
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY%20NC%20SA%204.0-lightgrey.svg
 [issues]: https://github.com/MiemieMethod/bedrock-addon-tutorial/issues
 [issues-shield]: https://img.shields.io/github/issues/MiemieMethod/bedrock-addon-tutorial
+[contributors]: https://github.com/MiemieMethod/bedrock-addon-tutorial/graphs/contributors
 [contributors-shield]: https://img.shields.io/github/contributors-anon/MiemieMethod/bedrock-addon-tutorial
