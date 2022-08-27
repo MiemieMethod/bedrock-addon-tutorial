@@ -222,6 +222,23 @@ module.exports = {
               ],
             },
             {
+              text: '杂项文章',
+              children: [
+                {
+                    text: '数据驱动',
+                    children: [
+                      '/misc/cereal_upgrade.md',
+                      '/misc/definition_event.md',
+                    ],
+                  },
+                  {
+                    text: '脚本使能',
+                    children: [
+                    ],
+                  },
+              ],
+            },
+            {
               text: '开发Wiki',
               link: 'https://wiki.bedev.cn/',
             },
@@ -488,6 +505,20 @@ module.exports = {
                 ],
               },*/
             ],
+            '/misc/': [
+                {
+                    text: '数据驱动',
+                    children: [
+                      '/misc/cereal_upgrade.md',
+                      '/misc/definition_event.md',
+                    ],
+                  },
+                  {
+                    text: '脚本使能',
+                    children: [
+                    ],
+                  },
+              ],
         },
         // page meta
         editLinkText: '在GitHub上编辑此页',
