@@ -501,7 +501,7 @@ float<0.0-*>
 
 ### 升级成为 1.19.20..
 
-用整个对象的值替换`seconds_to_destroy`字段，重命名为`minecraft:destructible_by_mining`。
+用整个对象的值替换`seconds_to_destroy`字段，重命名为`minecraft:destructible_by_explosion`。
 
 ```json
 block_destructible_by_explosion "minecraft:destructible_by_explosion":
