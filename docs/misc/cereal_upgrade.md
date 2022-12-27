@@ -180,6 +180,37 @@ minecraft:repairable "minecraft:repairable"
 }
 ```
 
+## description 1.19.40 block
+
+### 先前模式 1.16.100..1.19.39
+
+```json
+blockDescription "description"
+{
+    object "menu_category"
+    {
+        LocIdString "group"
+        enumerated_value "category"<"all","construction","nature","equipment","items","commands", "none">
+    }
+}
+```
+
+### 升级成为 1.19.40..
+
+
+
+```json
+blockDescription "description"
+{
+    object "menu_category"
+    {
+        LocIdString "group"
+        enumerated_value "category"<"all","construction","nature","equipment","items","commands">
+        bool "is_hidden_in_commands"
+    }
+}
+```
+
 ## minecraft:loot 1.19.10 block
 
 ### 先前模式 1.16.100..1.19.9
@@ -402,6 +433,34 @@ block_breathability "minecraft:breathability":
 enumerated_value<"solid", "air">
 ```
 
+## minecraft:creative_category 1.19.20 block
+
+### 先前模式 1.16.100..1.19.19
+
+```json
+creativeGroup "minecraft:creative_category":
+object
+{
+    LocIdString "group"
+    enumerated_value "category"<"all","construction","nature","equipment","items","commands", "none">
+}
+```
+
+### 升级成为 1.19.20..
+
+删除整个对象，并将`group`和`category`的值赋给方块描述组件下的`menu_category`下的`group`和`category`。
+
+```json
+blockDescription "description"
+{
+    object "menu_category"
+    {
+        LocIdString "group"
+        enumerated_value "category"<"all","construction","nature","equipment","items","commands", "none">
+    }
+}
+```
+
 ## minecraft:destroy_time 1.19.10 block
 
 ### 先前模式 1.16.100..1.19.9
@@ -446,28 +505,6 @@ object
 }
 ```
 
-## minecraft:display_name 1.19.10 block
-
-### 先前模式 1.16.100..1.19.9
-
-```json
-block_display_name "minecraft:display_name":
-LocIdString
-object
-{
-    LocIdString "display_name"
-}
-```
-
-### 升级成为 1.19.10..
-
-用`display_name`的值替换整个对象。
-
-```json
-block_display_name "minecraft:display_name":
-LocIdString
-```
-
 ## minecraft:explosion_resistance 1.19.10 block
 
 ### 先前模式 1.16.100..1.19.9
@@ -501,7 +538,7 @@ float<0.0-*>
 
 ### 升级成为 1.19.20..
 
-用整个对象的值替换`seconds_to_destroy`字段，重命名为`minecraft:destructible_by_mining`。
+用整个对象的值替换`explosion_resistance`字段，重命名为`minecraft:destructible_by_explosion`。
 
 ```json
 block_destructible_by_explosion "minecraft:destructible_by_explosion":
@@ -510,6 +547,46 @@ object
 {
     float "explosion_resistance"<0.0-*>
 }
+```
+
+## minecraft:display_name 1.19.10 block
+
+### 先前模式 1.16.100..1.19.9
+
+```json
+block_display_name "minecraft:display_name":
+LocIdString
+object
+{
+    LocIdString "display_name"
+}
+```
+
+### 升级成为 1.19.10..
+
+用`display_name`的值替换整个对象。
+
+```json
+block_display_name "minecraft:display_name":
+LocIdString
+```
+
+## minecraft:display_name 1.19.20 block
+
+### 先前模式 1.19.10..1.19.19
+
+```json
+block_display_name "minecraft:display_name":
+LocIdString
+```
+
+### 升级成为 1.19.20..
+
+将对象的值代入`tile.%s.name`后赋给自己。
+
+```json
+block_display_name "minecraft:display_name":
+LocIdString
 ```
 
 ## minecraft:friction 1.19.10 block
@@ -624,6 +701,24 @@ block_light_filter "minecraft:block_light_filter"
 brightness
 ```
 
+## minecraft:block_light_filter 1.19.40 block
+
+### 先前模式 1.19.10..1.19.39
+
+```json
+block_light_filter "minecraft:block_light_filter"
+brightness
+```
+
+### 升级成为 1.19.40..
+
+重命名对象。
+
+```json
+light_dampening "minecraft:light_dampening"
+brightness
+```
+
 ## minecraft:block_light_emission 1.19.10 block
 
 ### 先前模式 1.16.100..1.19.9
@@ -735,7 +830,7 @@ queued_ticking "minecraft:ticking"
 }
 ```
 
-## minecraft:crafting_table 1.19.10 block
+## minecraft:crafting_table 1.18.0 block
 
 ### 先前模式 1.16.100..1.17.99
 
