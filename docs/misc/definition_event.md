@@ -72,7 +72,7 @@ actor_definition_event:0.0.0:{
 ```json
 actor_definition_event:1.16.100:{
     float "weight" : opt
-    filter_group "filters" : opt // 根节出现的该字段无效
+    filter_group "filters" : opt // 根节点出现的该字段无效
     array "randomize"
     {
         definition_event "<any array element>"

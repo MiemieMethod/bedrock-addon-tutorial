@@ -520,6 +520,8 @@ module.exports = {
                   },
               ],
         },
+        docsDir: 'docs',
+        smoothScroll: true,
         // page meta
         editLinkText: '在GitHub上编辑此页',
         lastUpdatedText: '上次更新',
