@@ -4,7 +4,7 @@
 
 ## item
 
-`format_version`不支持`[1, 16, 100]`的写法
+`format_version`只支持`1.16.100`而不支持`[1, 16, 100]`的写法
 
 ```json
 item:1.16.100:{
@@ -21,7 +21,7 @@ item:1.16.100:{
 
 ## block
 
-`format_version`不支持`[1, 16, 100]`的写法
+`format_version`只支持`1.16.100`而不支持`[1, 16, 100]`的写法
 
 ```json
 block:1.16.100:{
