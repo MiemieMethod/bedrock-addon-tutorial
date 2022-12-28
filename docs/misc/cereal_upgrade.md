@@ -4,7 +4,7 @@
 
 ## item
 
-`format_version`只支持`1.16.100`而不支持`[1, 16, 100]`的写法
+`format_version`不支持`[1, 16, 100]`的写法
 
 ```json
 item:1.16.100:{
@@ -21,7 +21,7 @@ item:1.16.100:{
 
 ## block
 
-`format_version`只支持`1.16.100`而不支持`[1, 16, 100]`的写法
+`format_version`不支持`[1, 16, 100]`的写法
 
 ```json
 block:1.16.100:{
@@ -657,9 +657,10 @@ IdentifierString
 
 ```json
 block_light_filter "minecraft:block_light_absorption"
-int<0-16>
+float<0.0-16.0>
+object
 {
-    int "filter_level"<0-16>
+    float "filter_level"<0.0-16.0>
 }
 ```
 
@@ -670,6 +671,7 @@ int<0-16>
 ```json
 block_light_filter "minecraft:block_light_filter"
 brightness
+object
 {
     brightness "filter_level"
 }
@@ -687,6 +689,7 @@ int<0-15>
 ```json
 block_light_filter "minecraft:block_light_filter"
 brightness
+object
 {
     brightness "filter_level"
 }
@@ -726,6 +729,7 @@ brightness
 ```json
 block_light_emission "minecraft:block_light_emission"
 float<0.0-1.0>
+object
 {
     float "emission"<0.0-1.0>
 }
@@ -747,6 +751,7 @@ float<0.0-1.0>
 ```json
 block_map_color "minecraft:map_color"
 Color255RGB
+object
 {
     Color255RGB "map_color"
 }
