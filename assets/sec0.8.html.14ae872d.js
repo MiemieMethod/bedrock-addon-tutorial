@@ -1,0 +1,1 @@
+const e={key:"v-153e2708",path:"/advanced/sec0.8.html",title:"\u4E86\u89E3\u4F4D\u8FD0\u7B97",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{},filePathRelative:"advanced/sec0.8.md"};export{e as data};

@@ -1,0 +1,1 @@
+const e={key:"v-df690936",path:"/primer/sec14.1.html",title:"\u53D1\u5E03\u81F3MCPEDL",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{},filePathRelative:"primer/sec14.1.md"};export{e as data};
