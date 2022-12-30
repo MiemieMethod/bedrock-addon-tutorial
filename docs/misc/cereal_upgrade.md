@@ -61,15 +61,10 @@ minecraft:durability "minecraft:durability"
 
 ```json
 int_range:
-    int
-    array[2]
-    {
-        int "<any array element>"
-    }
     object
     {
-        int "range_min"
-        int "range_max"
+        int "min"
+        int "max"
     }
 ```
 
