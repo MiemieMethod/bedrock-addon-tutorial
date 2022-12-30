@@ -192,7 +192,7 @@ blockDescription "description"
 
 ### 升级成为 1.19.40..
 
-
+如果`category`不存在，加入`is_hidden_in_commands`值为`false`；如果`category`为空或解析失败，加入`is_hidden_in_commands`值为`true`，并在加入`is_hidden_in_commands`后将`category`的值重置为`none`；如果`category`为`all`或`none`，加入`is_hidden_in_commands`值为`true`，其余情况值为`false`；如果`category`为`all`、`commands`或`none`，在加入`is_hidden_in_commands`后将`category`的值重置为`none`
 
 ```json
 blockDescription "description"
@@ -200,7 +200,7 @@ blockDescription "description"
     object "menu_category"
     {
         LocIdString "group"
-        enumerated_value "category"<"all","construction","nature","equipment","items","commands">
+        enumerated_value "category"<"construction","nature","equipment","items","none">
         bool "is_hidden_in_commands"
     }
 }
