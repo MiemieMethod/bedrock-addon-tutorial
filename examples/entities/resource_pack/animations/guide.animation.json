@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.tutorial.guide.look": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            0,
+            "math.sin(query.life_time * 90) * 20",
+            0
+          ]
+        }
+      }
+    },
+    "animation.tutorial.guide.pulse": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "scale": "query.property('tutorial:working') ? 1.0 + 0.08 * math.sin(query.life_time * 180) : 1.0"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Tutorial gametest",
+    "description": "教程示例，请在测试世界中使用",
+    "uuid": "7ac8d8c3-c901-5d93-9dfd-fe33c80caf29",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      90
+    ]
+  },
+  "modules": [
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "63581789-5ea0-5b22-9002-5e25d03ba673",
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "entry": "scripts/block_check.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.0.0"
+    },
+    {
+      "module_name": "@minecraft/server-gametest",
+      "version": "1.0.0-beta"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "tutorial:travel_ration_from_apple"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "WAW"
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:wheat"
+      },
+      "A": {
+        "item": "minecraft:apple"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:apple"
+      }
+    ],
+    "result": {
+      "item": "tutorial:travel_ration",
+      "count": 2
+    }
+  }
+}

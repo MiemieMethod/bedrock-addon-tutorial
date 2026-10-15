@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tutorial:anchor",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/armor_stand"
+      },
+      "geometry": {
+        "default": "geometry.tutorial.anchor"
+      },
+      "render_controllers": [
+        "controller.render.tutorial.anchor"
+      ]
+    }
+  }
+}

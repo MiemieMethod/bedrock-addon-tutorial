@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Tutorial hud_coordinates_RP",
+    "description": "教程示例，请在测试世界中使用",
+    "uuid": "f8066508-491c-5d50-a7ba-5bd290835163",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      90
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "86a231da-b594-5dd3-8a6f-82d96defc6d1",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

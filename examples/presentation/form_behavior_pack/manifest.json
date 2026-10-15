@@ -1,0 +1,41 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "说明表单实验",
+    "description": "玩家首次生成后尝试打开说明表单",
+    "uuid": "1ac66e65-5846-42da-be7e-b015d4788577",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      90
+    ]
+  },
+  "modules": [
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "b6c9451f-1fca-41f8-a859-8a97fe3b37a5",
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.0.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "2.0.0"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Tutorial checkpoint_race_BP",
+    "description": "教程示例，请在测试世界中使用",
+    "uuid": "b09b1091-7f53-5513-9791-6ef91e57ff32",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      90
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "3033d943-0116-5614-903c-73b1f3389de9",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "13b16870-9192-552a-af90-ff470db4fe9f",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

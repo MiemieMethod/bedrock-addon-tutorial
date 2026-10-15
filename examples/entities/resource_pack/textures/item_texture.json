@@ -1,0 +1,12 @@
+{
+  "resource_pack_name": "tutorial",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "tutorial:token": {
+      "textures": "textures/items/emerald"
+    },
+    "tutorial:travel_ration": {
+      "textures": "textures/items/bread"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "namespace": "tutorial_hud",
+  "position_label": {
+    "type": "label",
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "offset": [
+      -12,
+      40
+    ],
+    "size": [
+      180,
+      20
+    ],
+    "text_alignment": "right",
+    "color": [
+      1.0,
+      0.9,
+      0.3
+    ],
+    "shadow": true,
+    "text": "#text",
+    "bindings": [
+      {
+        "binding_type": "global",
+        "binding_name": "#player_position_text",
+        "binding_name_override": "#text"
+      },
+      {
+        "binding_type": "global",
+        "binding_name": "#player_position_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  }
+}

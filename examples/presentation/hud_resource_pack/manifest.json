@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "HUD标签实验",
+    "description": "在HUD上添加一个固定标签",
+    "uuid": "fc83ca90-1e80-4c71-8308-9a3212466633",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      90
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "b7453906-70c2-4c0a-89b6-49ec7e612463",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

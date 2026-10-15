@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Tutorial field_station_RP",
+    "description": "教程示例，请在测试世界中使用",
+    "uuid": "de5b6651-c4a1-50c6-af0a-45b6eff3f2f6",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      90
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "28cbb050-06ec-5eb9-bf21-cba14143f987",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

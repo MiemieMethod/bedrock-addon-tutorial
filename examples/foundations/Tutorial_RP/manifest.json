@@ -1,0 +1,17 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "教程资源包",
+        "description": "用于学习纹理、声音和文本的资源包。",
+        "uuid": "0b03ed47-759e-42bf-bc72-d5a36ba90c83",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 21, 0]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "d6f01c89-4d16-48e6-8d20-d7fa41f84942",
+            "version": [1, 0, 0]
+        }
+    ]
+}

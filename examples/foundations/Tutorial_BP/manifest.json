@@ -1,0 +1,17 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "教程行为包",
+        "description": "从一个新的合成配方开始。",
+        "uuid": "88d1db72-bbea-4f17-9671-409c60c40972",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 21, 0]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "21a0b5ca-a7c7-4860-86a9-09bfa64e3c15",
+            "version": [1, 0, 0]
+        }
+    ]
+}

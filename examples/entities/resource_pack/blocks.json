@@ -1,0 +1,16 @@
+{
+  "format_version": [
+    1,
+    1,
+    0
+  ],
+  "tutorial:teaching_stone": {
+    "sound": "stone"
+  },
+  "tutorial:teaching_lamp": {
+    "sound": "glass"
+  },
+  "tutorial:stone_platform": {
+    "sound": "stone"
+  }
+}

@@ -1,5 +1,4 @@
 const { defaultTheme } = require('@vuepress/theme-default');
-const { docsearchPlugin } = require('@vuepress/plugin-docsearch');
 
 module.exports = {
     base: '/bedrock-addon-tutorial/',
@@ -7,7 +6,7 @@ module.exports = {
     title: '附加包教程',
     description: 'Minecraft基岩版附加包教程',
     head: [['link', { rel: 'icon', href: '/bedrock-addon-tutorial/images/favicon.png' }]],
-    
+
     theme: defaultTheme({
         logo: '/images/logo.png',
         repo: 'MiemieMethod/bedrock-addon-tutorial',
@@ -199,26 +198,9 @@ module.exports = {
             {
               text: '登峰教程',
               children: [
-                /*
-                {
-                  text: '深入',
-                  children: [
-                    '/zh/advanced/architecture.md',
-                    '/zh/advanced/plugin.md',
-                    '/zh/advanced/theme.md',
-                    {
-                      text: 'Cookbook',
-                      link: '/zh/advanced/cookbook/',
-                    },
-                  ],
-                },
-                {
-                  text: '其他资源',
-                  children: [
-                    '/zh/contributing.md',
-                  ],
-                },
-              */
+                '/peak/schema.md',
+                '/peak/compatibility.md',
+                '/peak/reproducibility.md',
               ],
             },
             {
@@ -232,8 +214,9 @@ module.exports = {
                     ],
                   },
                   {
-                    text: '脚本使能',
+                    text: '阅读指南',
                     children: [
+                      '/misc/source_guide.md',
                     ],
                   },
               ],
@@ -421,89 +404,9 @@ module.exports = {
                 },
             ],
             '/peak/': [
-              /*{
-                text: 'VuePress 参考',
-                collapsible: true,
-                children: [
-                  '/zh/reference/cli.md',
-                  '/zh/reference/config.md',
-                  '/zh/reference/frontmatter.md',
-                  '/zh/reference/components.md',
-                  '/zh/reference/plugin-api.md',
-                  '/zh/reference/theme-api.md',
-                  '/zh/reference/client-api.md',
-                  '/zh/reference/node-api.md',
-                ],
-              },
-              {
-                text: '打包工具参考',
-                collapsible: true,
-                children: [
-                  '/zh/reference/bundler/vite.md',
-                  '/zh/reference/bundler/webpack.md',
-                ],
-              },
-              {
-                text: '默认主题参考',
-                collapsible: true,
-                children: [
-                  '/zh/reference/default-theme/config.md',
-                  '/zh/reference/default-theme/frontmatter.md',
-                  '/zh/reference/default-theme/components.md',
-                  '/zh/reference/default-theme/markdown.md',
-                  '/zh/reference/default-theme/styles.md',
-                  '/zh/reference/default-theme/extending.md',
-                ],
-              },
-              {
-                text: '官方插件参考',
-                collapsible: true,
-                children: [
-                  {
-                    text: '常用功能',
-                    children: [
-                      '/zh/reference/plugin/back-to-top.md',
-                      '/zh/reference/plugin/container.md',
-                      '/zh/reference/plugin/external-link-icon.md',
-                      '/zh/reference/plugin/google-analytics.md',
-                      '/zh/reference/plugin/medium-zoom.md',
-                      '/zh/reference/plugin/nprogress.md',
-                      '/zh/reference/plugin/register-components.md',
-                    ],
-                  },
-                  {
-                    text: '内容搜索',
-                    children: [
-                      '/zh/reference/plugin/docsearch.md',
-                      '/zh/reference/plugin/search.md',
-                    ],
-                  },
-                  {
-                    text: 'PWA',
-                    children: [
-                      '/zh/reference/plugin/pwa.md',
-                      '/zh/reference/plugin/pwa-popup.md',
-                    ],
-                  },
-                  {
-                    text: '语法高亮',
-                    children: [
-                      '/zh/reference/plugin/prismjs.md',
-                      '/zh/reference/plugin/shiki.md',
-                    ],
-                  },
-                  {
-                    text: '主题开发',
-                    children: [
-                      '/zh/reference/plugin/active-header-links.md',
-                      '/zh/reference/plugin/git.md',
-                      '/zh/reference/plugin/palette.md',
-                      '/zh/reference/plugin/theme-data.md',
-                      '/zh/reference/plugin/toc.md',
-                    ],
-                  },
-                ],
-              },*/
+              '/peak/schema.md',
+              '/peak/compatibility.md',
+              '/peak/reproducibility.md',
             ],
             '/misc/': [
                 {
@@ -514,8 +417,9 @@ module.exports = {
                     ],
                   },
                   {
-                    text: '脚本使能',
+                    text: '阅读指南',
                     children: [
+                      '/misc/source_guide.md',
                     ],
                   },
               ],
@@ -545,9 +449,7 @@ module.exports = {
     }),
 
     plugins: [
-        /*docsearchPlugin({
-            // 配置项
-        }),*/
+
         '@vuepress/plugin-html-redirect',
     ]
 };

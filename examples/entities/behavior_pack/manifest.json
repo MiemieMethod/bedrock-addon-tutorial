@@ -1,0 +1,39 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Tutorial Guide BP",
+    "description": "章节4至6稳定接口教学示例；需在测试世界验证。",
+    "uuid": "28f8b5b0-2c46-59fe-9bcb-9ea896e2d68a",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      80
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "e1b381b6-ac19-5341-95bd-e62696d6ed7d",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "5f95f300-df2e-5965-92eb-c9588af8a11f",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

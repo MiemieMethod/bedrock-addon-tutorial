@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "tutorial:double_spark",
+      "basic_render_parameters": {
+        "material": "particles_alpha",
+        "texture": "textures/particle/particles"
+      }
+    },
+    "events": {
+      "burst": {
+        "sequence": [
+          {
+            "log": "tutorial:double_spark burst"
+          },
+          {
+            "particle_effect": {
+              "effect": "tutorial:spark",
+              "type": "emitter"
+            }
+          }
+        ]
+      }
+    },
+    "components": {
+      "minecraft:emitter_rate_steady": {
+        "spawn_rate": 0,
+        "max_particles": 1
+      },
+      "minecraft:emitter_lifetime_expression": {
+        "activation_expression": 1,
+        "expiration_expression": "variable.emitter_age >= 1.5"
+      },
+      "minecraft:emitter_lifetime_events": {
+        "timeline": {
+          "0.5": "burst",
+          "1.0": "burst"
+        }
+      },
+      "minecraft:emitter_shape_point": {}
+    }
+  }
+}

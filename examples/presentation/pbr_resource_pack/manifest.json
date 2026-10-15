@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "纹理集观察实验",
+    "description": "比较石头表面的金属度与粗糙度",
+    "uuid": "6996c799-2e6e-440e-820e-ecbf1208cc9c",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 120]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "beec65fa-b797-48d1-82b8-14a5f367eb54",
+      "version": [1, 0, 0]
+    }
+  ],
+  "capabilities": ["pbr"]
+}

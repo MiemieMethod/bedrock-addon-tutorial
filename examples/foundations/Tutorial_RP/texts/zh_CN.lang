@@ -1,0 +1,4 @@
+tile.dirt.name=教学泥土
+tile.dirt.default.name=教学泥土
+tutorial.message.ready=教程资源包已经准备好了。
+tutorial.message.collected=我们已经收集了 %s 块圆石。

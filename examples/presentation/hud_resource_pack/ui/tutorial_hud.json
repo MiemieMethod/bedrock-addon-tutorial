@@ -1,0 +1,14 @@
+{
+  "namespace": "tutorial_hud",
+  "status_label": {
+    "type": "label",
+    "text": "附加包实验世界",
+    "color": [1.0, 1.0, 1.0],
+    "shadow": true,
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "offset": [0, 16],
+    "size": [180, 14],
+    "layer": 20
+  }
+}

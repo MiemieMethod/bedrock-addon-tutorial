@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Tutorial Guide RP",
+    "description": "章节4至6稳定接口教学示例；需在测试世界验证。",
+    "uuid": "5f95f300-df2e-5965-92eb-c9588af8a11f",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      80
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "233ad689-3f2b-5d75-a0e8-473f342e95e8",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

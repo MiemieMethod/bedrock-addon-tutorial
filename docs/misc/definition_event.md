@@ -1,5 +1,8 @@
 # 定义事件
 
+> 本文保留原稿对旧版数据驱动实现的研究记录，主要涉及1.16—1.19时期的格式。内部名称、枚举和模式文本不构成当前国际版公开接口承诺，也不是本次从最新游戏构建重新导出的结果。请结合[资料版本与验证范围](./source_guide.md)和[阅读导出模式](../peak/schema.md)使用；模式记法代码块用于阅读结构，不能直接复制为JSON文件。
+
+
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc-sa.svg" /></a>
 
 **定义事件**（**Definition Event**）是一种可以用于实体、方块和物品的JSON定义中的事件。
@@ -39,7 +42,7 @@ enum DefinitionEventType : int {
 
 #### 实体
 
-```json
+```text
 actor_definition_event:0.0.0:{
     float "weight" : opt
     filter_group "filters" : opt
@@ -69,7 +72,7 @@ actor_definition_event:0.0.0:{
 }
 ```
 
-```json
+```text
 actor_definition_event:1.16.100:{
     float "weight" : opt
     filter_group "filters" : opt // 根节点出现的该字段无效
@@ -100,7 +103,7 @@ actor_definition_event:1.16.100:{
 }
 ```
 
-```json
+```text
 actor_definition_event:1.19.20:{
     float "weight" : opt
     filter_group "filters" : opt // 根节点允许出现该字段
@@ -133,7 +136,7 @@ actor_definition_event:1.19.20:{
 
 #### 方块/物品
 
-```json
+```text
 definition_event:1.16.100:{
     float "weight" : opt
     expression_node "condition" : opt
@@ -186,7 +189,7 @@ enum TypeExecutingEvent : int {
 
 #### ActorCommandResponse
 
-```json
+```text
 actor_event_responses:1.16.100:
 object "run_command"
 {
@@ -216,7 +219,7 @@ object "run_command"
 
 #### SetPropertyResponse
 
-```json
+```text
 actor_event_responses:1.16.100:
 object "set_property"
 {
@@ -228,7 +231,7 @@ object "set_property"
 
 #### CommandResponse
 
-```json
+```text
 item_event_responses:1.16.100:
 block_event_responses:1.16.100:
 object "run_command"
@@ -259,7 +262,7 @@ object "run_command"
 
 #### DecrementStackEventResponse
 
-```json
+```text
 item_event_responses:1.16.100:
 block_event_responses:1.16.100:
 object "decrement_stack"
@@ -272,7 +275,7 @@ object "decrement_stack"
 
 #### DamageResponse
 
-```json
+```text
 item_event_responses:1.16.100:
 block_event_responses:1.16.100:
 object "damage"
@@ -301,7 +304,7 @@ object "damage"
 
 #### DieEventResponse
 
-```json
+```text
 item_event_responses:1.16.100:
 block_event_responses:1.16.100:
 object "die"
@@ -327,7 +330,7 @@ object "die"
 
 #### MobEffectResponse
 
-```json
+```text
 item_event_responses:1.16.100:
 block_event_responses:1.16.100:
 object "add_mob_effect"
@@ -356,7 +359,7 @@ object "add_mob_effect"
 
 #### RemoveMobEffectResponse
 
-```json
+```text
 item_event_responses:1.16.100:
 block_event_responses:1.16.100:
 object "remove_mob_effect"
@@ -384,7 +387,7 @@ object "remove_mob_effect"
 
 #### ParticleEffectResponse
 
-```json
+```text
 item_event_responses:1.16.100:
 block_event_responses:1.16.100:
 object "play_effect"
@@ -412,7 +415,7 @@ object "play_effect"
 
 #### PlaySoundResponse
 
-```json
+```text
 item_event_responses:1.16.100:
 block_event_responses:1.16.100:
 object "play_sound"
@@ -439,7 +442,7 @@ object "play_sound"
 
 #### SetBlockProperty
 
-```json
+```text
 item_event_responses:1.16.100:
 block_event_responses:1.16.100:
 object "set_property"
@@ -452,7 +455,7 @@ object "set_property"
 
 #### ShootEventResponse
 
-```json
+```text
 item_event_responses:1.16.100:
 block_event_responses:1.16.100:
 object "shoot"
@@ -497,7 +500,7 @@ enum ActorLocation : int {
 
 #### SwingEventResponse
 
-```json
+```text
 item_event_responses:1.16.100:
 block_event_responses:1.16.100:
 object "swing"
@@ -509,7 +512,7 @@ object "swing"
 
 #### TeleportResponse
 
-```json
+```text
 item_event_responses:1.16.100:
 block_event_responses:1.16.100:
 object "teleport"
@@ -539,7 +542,7 @@ object "teleport"
 
 #### TransformItemResponse
 
-```json
+```text
 item_event_responses:1.16.100:
 block_event_responses:1.16.100:
 object "transform_item"
@@ -552,7 +555,7 @@ object "transform_item"
 
 #### SetBlock
 
-```json
+```text
 item_event_responses:1.16.100:
 block_event_responses:1.16.100:
 object "set_block"
@@ -565,7 +568,7 @@ object "set_block"
 
 #### SetBlockAtPos
 
-```json
+```text
 item_event_responses:1.16.100:
 block_event_responses:1.16.100:
 object "set_block_at_pos"
@@ -579,7 +582,7 @@ object "set_block_at_pos"
 
 #### SpawnLootEventResponse
 
-```json
+```text
 item_event_responses:1.16.100:
 block_event_responses:1.16.100:
 object "spawn_loot"
@@ -625,7 +628,7 @@ object "spawn_loot"
 
 #### 实体
 
-```json
+```text
 actor_definition_trigger:0.0.0:
 string // 在特定情况下引擎逻辑将允许直接传入一个事件名，比如定义事件中便允许传入
 object
@@ -638,7 +641,7 @@ object
 
 #### 方块/物品
 
-```json
+```text
 definition_trigger:1.16.100:
 string // 在特定情况下引擎逻辑将允许直接传入一个事件名，比如定义事件中便允许传入
 object
@@ -660,7 +663,7 @@ object
 
 #### 实体
 
-```json
+```text
 filter_group:0.0.0:
 array
 {
@@ -713,7 +716,7 @@ enum FilterParamType : int {
 
 #### 生物群系
 
-```json
+```text
 biome_filter_group:1.12.0:
 filter_group
 ```
@@ -722,7 +725,7 @@ filter_group
 
 在源码层面中，以下这种格式的结构中，如果父级（示例中为`top`）的合集类型为OR，会自动在该父级下新建一个合计类型为AND的子过滤器组，并将该结构视为该合集类型为AND的子组的结构进行解析。
 
-```json
+```text
 "top": {
     "all_of": { /* ... */ },
     "none_of": { /* ... */ }
@@ -731,7 +734,7 @@ filter_group
 
 简言之，父级如果是OR的情况下，如果父级被解析为一个对象，而且对该象中没有`test`字段（即不是叶节点），而且该对象中的字段数目不止1个（严格大于1），那么在该父级下会先新建一个AND合集类型的子组，将该对象视为该子组的内容来解析。如果该父级解析为一个数组，则不受任何影响；如果该父级是AND或NOT，也不受此影响。上述格式等价转换成下述格式后，将会正常按照OR的逻辑进行解析：
 
-```json
+```text
 "top": [
     {
         "all_of": { /* ... */ }
@@ -747,3 +750,10 @@ filter_group
 #### 你知道吗
 
 过滤器组的顶级（根节点）在解析时无论其事实上来源于哪个字段，其字段名都会被认为是`top`，但是这个字段名事实上在解析时是没有任何作用的。
+
+
+## 从历史事件实现回到公开接口
+
+上文的C++名称用于说明原稿研究过的内部结构，不能在JSON中任意调用同名响应，也不能从枚举值直接推导新的脚本事件。编写当前实体时，应当使用目标版本文档列出的事件结构；编写脚本时，应当使用声明于对应模块版本中的事件。两类事件可以共同参与玩法，但它们的注册、参数和执行时机需要分别判断。
+
+公开实体定义的实践见[服务端实体](../primer/sec6.3.md)，脚本回调见[基于事件回调修改游戏](../advanced/sec1.4.md)。若要重新验证上文某项内部顺序，应取得对应构建的实际导出或建立最小测试，不能仅凭旧稿认定当前运行顺序不变。

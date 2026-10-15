@@ -1,0 +1,12 @@
+{
+  "serialize_name": "tutorial_researchers",
+  "localization_name": "tutorial_researchers",
+  "skins": [
+    {
+      "localization_name": "researcher",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "researcher.png",
+      "type": "free"
+    }
+  ]
+}

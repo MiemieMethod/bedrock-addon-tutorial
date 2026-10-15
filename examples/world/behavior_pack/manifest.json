@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "教程：群系、地物与函数",
+    "description": "配合教程第七至第九章使用。结构模板需按正文另行导出。",
+    "uuid": "ee17144f-8f85-43f0-a47b-9b08c66ee6ac",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      30
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "af1cf128-b134-4b40-bab2-28d87218d829",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

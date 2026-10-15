@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Tutorial checkpoint_race_RP",
+    "description": "教程示例，请在测试世界中使用",
+    "uuid": "13b16870-9192-552a-af90-ff470db4fe9f",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      90
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "ffdf8e2e-7ef3-53b1-8735-4707fb18cbb5",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

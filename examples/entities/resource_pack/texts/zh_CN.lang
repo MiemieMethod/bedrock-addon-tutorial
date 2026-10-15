@@ -1,0 +1,6 @@
+item.tutorial:travel_ration.name=旅行口粮
+tile.tutorial:teaching_stone.name=教学石材
+tile.tutorial:teaching_lamp.name=教学灯
+tile.tutorial:stone_platform.name=石台
+entity.tutorial:guide.name=教学向导
+item.spawn_egg.entity.tutorial:guide.name=教学向导刷怪蛋

@@ -1,0 +1,16 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "pack.name",
+    "description": "pack.description",
+    "uuid": "f43e5cb6-06a3-47fa-9539-599b64b8bd93",
+    "version": [1, 0, 0]
+  },
+  "modules": [
+    {
+      "type": "world_template",
+      "uuid": "8881db57-16ca-4427-8153-66e8d9bece20",
+      "version": [1, 0, 0]
+    }
+  ]
+}

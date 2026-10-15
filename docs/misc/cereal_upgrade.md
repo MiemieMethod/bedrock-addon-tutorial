@@ -1,12 +1,15 @@
 # 物品/方块数据驱动升级版本控制
 
+> 本文保留原稿对旧版数据驱动实现的研究记录，主要涉及1.16—1.19时期的格式。内部名称、枚举和模式文本不构成当前国际版公开接口承诺，也不是本次从最新游戏构建重新导出的结果。请结合[资料版本与验证范围](./source_guide.md)和[阅读导出模式](../peak/schema.md)使用；模式记法代码块用于阅读结构，不能直接复制为JSON文件。
+
+
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc-sa.svg" /></a>
 
 ## item
 
 `format_version`不支持`[1, 16, 100]`的写法
 
-```json
+```text
 item:1.16.100:{
     string "format_version"
     itemSchema "minecraft:item"
@@ -23,7 +26,7 @@ item:1.16.100:{
 
 `format_version`不支持`[1, 16, 100]`的写法
 
-```json
+```text
 block:1.16.100:{
     string "format_version"
     blockSchema "minecraft:item"
@@ -50,7 +53,7 @@ block:1.16.100:{
 
 ### 先前模式 1.16.100..1.17.99
 
-```json
+```text
 minecraft:durability "minecraft:durability"
 {
     int "max_durability" : opt
@@ -59,7 +62,7 @@ minecraft:durability "minecraft:durability"
 }
 ```
 
-```json
+```text
 int_range:
     object
     {
@@ -72,7 +75,7 @@ int_range:
 
 `max_damage`被解析为`max_durability`。
 
-```json
+```text
 minecraft:durability "minecraft:durability"
 {
     int "max_durability" : opt
@@ -84,7 +87,7 @@ minecraft:durability "minecraft:durability"
 
 ### 先前模式 1.16.100..1.17.99
 
-```json
+```text
 minecraft:food "minecraft:food"
 {
     int "nutrition" : opt
@@ -95,7 +98,7 @@ minecraft:food "minecraft:food"
 }
 ```
 
-```json
+```text
 item_descriptor:
     string
     object
@@ -106,7 +109,7 @@ item_descriptor:
 ```
 
 
-```json
+```text
 trigger:
     string
     object
@@ -121,7 +124,7 @@ trigger:
 
 将字符串格式的饱和度修饰符全部解析为数字，并删去字符串格式。（`high`等价于`normal`）
 
-```json
+```text
 minecraft:food "minecraft:food"
 {
     int "nutrition" : opt
@@ -136,7 +139,7 @@ minecraft:food "minecraft:food"
 
 ### 先前模式 1.16.100..1.17.99
 
-```json
+```text
 minecraft:repairable "minecraft:repairable"
 {
     array "repair_items" : opt
@@ -148,7 +151,7 @@ minecraft:repairable "minecraft:repairable"
 }
 ```
 
-```json
+```text
 repair_item_entry:
 object
     {
@@ -164,7 +167,7 @@ object
 
 删去`repair_items`的字符串数组格式。
 
-```json
+```text
 minecraft:repairable "minecraft:repairable"
 {
     array "repair_items" : opt
@@ -179,7 +182,7 @@ minecraft:repairable "minecraft:repairable"
 
 ### 先前模式 1.16.100..1.19.39
 
-```json
+```text
 blockDescription "description"
 {
     object "menu_category"
@@ -194,7 +197,7 @@ blockDescription "description"
 
 如果`category`不存在，加入`is_hidden_in_commands`值为`false`；如果`category`为空或解析失败，加入`is_hidden_in_commands`值为`true`，并在加入`is_hidden_in_commands`后将`category`的值重置为`none`；如果`category`为`all`或`none`，加入`is_hidden_in_commands`值为`true`，其余情况值为`false`；如果`category`为`all`、`commands`或`none`，在加入`is_hidden_in_commands`后将`category`的值重置为`none`
 
-```json
+```text
 blockDescription "description"
 {
     object "menu_category"
@@ -210,7 +213,7 @@ blockDescription "description"
 
 ### 先前模式 1.16.100..1.19.9
 
-```json
+```text
 loot "minecraft:loot":
 IdentifierString
 object
@@ -223,7 +226,7 @@ object
 
 用`loot_table`的值替换整个对象。
 
-```json
+```text
 loot "minecraft:loot":
 IdentifierString
 ```
@@ -232,7 +235,7 @@ IdentifierString
 
 ### 先前模式 1.16.100..1.19.9
 
-```json
+```text
 flammable "minecraft:flammable"
 {
     int "flame_odds"<0-*>
@@ -244,7 +247,7 @@ flammable "minecraft:flammable"
 
 用`catch_chance_modifier`的值替换`flame_odds`，用`destroy_chance_modifier`的值替换`burn_odds`。
 
-```json
+```text
 flammable "minecraft:flammable"
 {
     int "catch_chance_modifier"<0-*>
@@ -256,7 +259,7 @@ flammable "minecraft:flammable"
 
 ### 先前模式 1.16.100..1.17.99
 
-```json
+```text
 block_aim_collision "minecraft:pick_collision"
 bool
 object
@@ -267,7 +270,7 @@ object
 }
 ```
 
-```json
+```text
 vec3:
 array[3]
 {
@@ -279,7 +282,7 @@ array[3]
 
 重命名为`minecraft:aim_collision`
 
-```json
+```text
 block_aim_collision "minecraft:aim_collision"
 bool
 object
@@ -294,7 +297,7 @@ object
 
 ### 先前模式 1.18.0..1.19.9
 
-```json
+```text
 block_aim_collision "minecraft:aim_collision"
 bool
 object
@@ -309,7 +312,7 @@ object
 
 如果存在`enabled`，用`enabled`的值替换整个对象。
 
-```json
+```text
 block_aim_collision "minecraft:aim_collision"
 bool
 object
@@ -323,7 +326,7 @@ object
 
 ### 先前模式 1.19.10..1.19.19
 
-```json
+```text
 block_aim_collision "minecraft:aim_collision"
 bool
 object
@@ -337,7 +340,7 @@ object
 
 重命名为`minecraft:selection_box`。
 
-```json
+```text
 selection_box "minecraft:selection_box"
 bool
 object
@@ -351,7 +354,7 @@ object
 
 ### 先前模式 1.16.100..1.17.99
 
-```json
+```text
 block_collision "minecraft:entity_collision"
 bool
 object
@@ -366,7 +369,7 @@ object
 
 重命名为`minecraft:block_collision`
 
-```json
+```text
 block_collision "minecraft:block_collision"
 bool
 object
@@ -381,7 +384,7 @@ object
 
 ### 先前模式 1.18.0..1.19.9
 
-```json
+```text
 block_collision "minecraft:block_collision"
 bool
 object
@@ -396,7 +399,7 @@ object
 
 如果存在`enabled`，用`enabled`的值替换整个对象，并重命名为`minecraft:collision_box`。
 
-```json
+```text
 block_collision "minecraft:collision_box"
 bool
 object
@@ -410,7 +413,7 @@ object
 
 ### 先前模式 1.16.100..1.19.9
 
-```json
+```text
 block_breathability "minecraft:breathability":
 enumerated_value<"solid", "air">
 object
@@ -423,7 +426,7 @@ object
 
 用`breathing_type`的值替换整个对象。
 
-```json
+```text
 block_breathability "minecraft:breathability":
 enumerated_value<"solid", "air">
 ```
@@ -432,7 +435,7 @@ enumerated_value<"solid", "air">
 
 ### 先前模式 1.16.100..1.19.19
 
-```json
+```text
 creativeGroup "minecraft:creative_category":
 object
 {
@@ -445,7 +448,7 @@ object
 
 删除整个对象，并将`group`和`category`的值赋给方块描述组件下的`menu_category`下的`group`和`category`。
 
-```json
+```text
 blockDescription "description"
 {
     object "menu_category"
@@ -460,7 +463,7 @@ blockDescription "description"
 
 ### 先前模式 1.16.100..1.19.9
 
-```json
+```text
 block_destroy_time "minecraft:destroy_time":
 float<0.0-*>
 object
@@ -473,7 +476,7 @@ object
 
 用`destroy_time`的值替换整个对象。
 
-```json
+```text
 block_destroy_time "minecraft:destroy_time":
 float<0.0-*>
 ```
@@ -482,7 +485,7 @@ float<0.0-*>
 
 ### 先前模式 1.19.10..1.19.19
 
-```json
+```text
 block_destroy_time "minecraft:destroy_time":
 float<0.0-*>
 ```
@@ -491,7 +494,7 @@ float<0.0-*>
 
 用整个对象的值替换`seconds_to_destroy`字段，重命名为`minecraft:destructible_by_mining`。
 
-```json
+```text
 block_destructible_by_mining "minecraft:destructible_by_mining":
 bool
 object
@@ -504,7 +507,7 @@ object
 
 ### 先前模式 1.16.100..1.19.9
 
-```json
+```text
 minecraft:explosion_resistance "minecraft:explosion_resistance":
 float<0.0-*>
 object
@@ -517,7 +520,7 @@ object
 
 用`resistance`的值替换整个对象。
 
-```json
+```text
 minecraft:explosion_resistance "minecraft:explosion_resistance":
 float<0.0-*>
 ```
@@ -526,7 +529,7 @@ float<0.0-*>
 
 ### 先前模式 1.19.10..1.19.19
 
-```json
+```text
 minecraft:explosion_resistance "minecraft:explosion_resistance":
 float<0.0-*>
 ```
@@ -535,7 +538,7 @@ float<0.0-*>
 
 用整个对象的值替换`explosion_resistance`字段，重命名为`minecraft:destructible_by_explosion`。
 
-```json
+```text
 block_destructible_by_explosion "minecraft:destructible_by_explosion":
 bool
 object
@@ -548,7 +551,7 @@ object
 
 ### 先前模式 1.16.100..1.19.9
 
-```json
+```text
 block_display_name "minecraft:display_name":
 LocIdString
 object
@@ -561,7 +564,7 @@ object
 
 用`display_name`的值替换整个对象。
 
-```json
+```text
 block_display_name "minecraft:display_name":
 LocIdString
 ```
@@ -570,7 +573,7 @@ LocIdString
 
 ### 先前模式 1.19.10..1.19.19
 
-```json
+```text
 block_display_name "minecraft:display_name":
 LocIdString
 ```
@@ -579,7 +582,7 @@ LocIdString
 
 将对象的值代入`tile.%s.name`后赋给自己。
 
-```json
+```text
 block_display_name "minecraft:display_name":
 LocIdString
 ```
@@ -588,7 +591,7 @@ LocIdString
 
 ### 先前模式 1.16.100..1.19.9
 
-```json
+```text
 block_friction "minecraft:friction"
 float<0.1000000014901161-1.0>
 object
@@ -601,7 +604,7 @@ object
 
 用`friction`的值替换整个对象。
 
-```json
+```text
 block_friction "minecraft:friction"
 float<0.1000000014901161-1.0>
 ```
@@ -610,7 +613,7 @@ float<0.1000000014901161-1.0>
 
 ### 先前模式 1.19.10..1.19.20
 
-```json
+```text
 block_friction "minecraft:friction"
 float<0.1000000014901161-1.0>
 ```
@@ -619,7 +622,7 @@ float<0.1000000014901161-1.0>
 
 取用1减的差。
 
-```json
+```text
 block_friction "minecraft:friction"
 float<0.0-0.8999999761581421>
 ```
@@ -628,7 +631,7 @@ float<0.0-0.8999999761581421>
 
 ### 先前模式 1.16.100..1.19.9
 
-```json
+```text
 block_geometry "minecraft:geometry"
 IdentifierString
 object
@@ -641,7 +644,7 @@ object
 
 用`geometry`的值替换整个对象。
 
-```json
+```text
 block_geometry "minecraft:geometry"
 IdentifierString
 ```
@@ -650,7 +653,7 @@ IdentifierString
 
 ### 先前模式 1.16.100..1.17.99
 
-```json
+```text
 block_light_filter "minecraft:block_light_absorption"
 float<0.0-16.0>
 object
@@ -663,7 +666,7 @@ object
 
 更改`filter_level`的值，重命名组件。
 
-```json
+```text
 block_light_filter "minecraft:block_light_filter"
 brightness
 object
@@ -672,7 +675,7 @@ object
 }
 ```
 
-```json
+```text
 brightness:
 int<0-15>
 ```
@@ -681,7 +684,7 @@ int<0-15>
 
 ### 先前模式 1.18.0..1.19.9
 
-```json
+```text
 block_light_filter "minecraft:block_light_filter"
 brightness
 object
@@ -694,7 +697,7 @@ object
 
 用`filter_level`的值替换整个对象。
 
-```json
+```text
 block_light_filter "minecraft:block_light_filter"
 brightness
 ```
@@ -703,7 +706,7 @@ brightness
 
 ### 先前模式 1.19.10..1.19.39
 
-```json
+```text
 block_light_filter "minecraft:block_light_filter"
 brightness
 ```
@@ -712,7 +715,7 @@ brightness
 
 重命名对象。
 
-```json
+```text
 light_dampening "minecraft:light_dampening"
 brightness
 ```
@@ -721,7 +724,7 @@ brightness
 
 ### 先前模式 1.16.100..1.19.9
 
-```json
+```text
 block_light_emission "minecraft:block_light_emission"
 float<0.0-1.0>
 object
@@ -734,7 +737,7 @@ object
 
 用`emission`的值替换整个对象。
 
-```json
+```text
 block_light_emission "minecraft:block_light_emission"
 float<0.0-1.0>
 ```
@@ -743,7 +746,7 @@ float<0.0-1.0>
 
 ### 先前模式 1.16.100..1.19.9
 
-```json
+```text
 block_map_color "minecraft:map_color"
 Color255RGB
 object
@@ -752,7 +755,7 @@ object
 }
 ```
 
-```json
+```text
 Color255RGB:
 string<^#[a-fA-F0-9]{6}$>
 array<3>
@@ -765,7 +768,7 @@ array<3>
 
 用`map_color`的值替换整个对象。
 
-```json
+```text
 block_map_color "minecraft:map_color"
 Color255RGB
 ```
@@ -774,7 +777,7 @@ Color255RGB
 
 ### 先前模式 1.16.100..1.19.9
 
-```json
+```text
 part_visibility "minecraft:part_visibility"
 {
     object "rules"
@@ -788,7 +791,7 @@ part_visibility "minecraft:part_visibility"
 
 将`rules`重命名为`conditions`。
 
-```json
+```text
 part_visibility "minecraft:part_visibility"
 {
     object "conditions"
@@ -802,7 +805,7 @@ part_visibility "minecraft:part_visibility"
 
 ### 先前模式 1.16.100..1.19.9
 
-```json
+```text
 queued_ticking "minecraft:ticking"
 {
     trigger "on_tick"
@@ -818,7 +821,7 @@ queued_ticking "minecraft:ticking"
 
 将`range`从以秒为单位变为以刻为单位，然后重命名为`interval_range`，并添加数字限制。
 
-```json
+```text
 queued_ticking "minecraft:ticking"
 {
     trigger "on_tick"
@@ -834,7 +837,7 @@ queued_ticking "minecraft:ticking"
 
 ### 先前模式 1.16.100..1.17.99
 
-```json
+```text
 crafting_table "minecraft:crafting_table"
 {
     string "custom_description"
@@ -850,7 +853,7 @@ crafting_table "minecraft:crafting_table"
 
 删除`grid_size`。
 
-```json
+```text
 crafting_table "minecraft:crafting_table"
 {
     string "custom_description"
@@ -865,7 +868,7 @@ crafting_table "minecraft:crafting_table"
 
 ### 先前模式 1.18.0..1.19.9
 
-```json
+```text
 crafting_table "minecraft:crafting_table"
 {
     string "custom_description"
@@ -880,7 +883,7 @@ crafting_table "minecraft:crafting_table"
 
 将`custom_description`重命名为`table_name`。
 
-```json
+```text
 crafting_table "minecraft:crafting_table"
 {
     string "table_name"
@@ -890,3 +893,10 @@ crafting_table "minecraft:crafting_table"
     }
 }
 ```
+
+
+## 将历史迁移记录用于当前作品
+
+阅读上面的记录时，我们先定位旧文件实际使用的`format_version`，再检查目标版本的公开模式。字段改名、值结构变化和运行含义变化需要分别确认，不能将历史表中最后一项自动视为当前写法。`block`示例中保留了原稿的`minecraft:item`字样，阅读时应特别注意其与方块根字段的区别；该段是待与原始导出对照的研究记录，不是可导入示例。
+
+当前新作品的完整起点见[自定义物品](../primer/sec4.2.md)与[自定义方块](../primer/sec5.2.md)。如果正在迁移一个旧包，可以按照[最小实验](../peak/compatibility.md)保留原包副本，逐项验证字段变化，并记录结果。

@@ -1,0 +1,4 @@
+tile.dirt.name=Tutorial Dirt
+tile.dirt.default.name=Tutorial Dirt
+tutorial.message.ready=The tutorial resource pack is ready.
+tutorial.message.collected=We have collected %s cobblestone blocks.

@@ -1,0 +1,20 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "tutorial:sticks_from_bamboo_pair"
+        },
+        "tags": ["crafting_table"],
+        "ingredients": [
+            {"item": "minecraft:bamboo"},
+            {"item": "minecraft:bamboo"}
+        ],
+        "unlock": [
+            {"item": "minecraft:bamboo"}
+        ],
+        "result": {
+            "item": "minecraft:stick",
+            "count": 2
+        }
+    }
+}

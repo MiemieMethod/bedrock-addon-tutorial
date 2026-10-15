@@ -1,0 +1,42 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "tutorial:teaching_lamp",
+      "menu_category": {
+        "category": "construction"
+      },
+      "states": {
+        "tutorial:lit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "tutorial:teaching_lamp",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.8
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 2
+      },
+      "minecraft:light_emission": 0,
+      "minecraft:map_color": "#e3c169"
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('tutorial:lit')",
+        "components": {
+          "minecraft:light_emission": 15
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "tutorial:leather_from_rotten_flesh"
+    },
+    "tags": [
+      "furnace"
+    ],
+    "input": "minecraft:rotten_flesh",
+    "output": "minecraft:leather"
+  }
+}

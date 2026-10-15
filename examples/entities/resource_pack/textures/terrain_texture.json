@@ -1,0 +1,14 @@
+{
+  "resource_pack_name": "tutorial",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "tutorial:teaching_stone": {
+      "textures": "textures/blocks/stone"
+    },
+    "tutorial:teaching_lamp": {
+      "textures": "textures/blocks/glowstone"
+    }
+  }
+}

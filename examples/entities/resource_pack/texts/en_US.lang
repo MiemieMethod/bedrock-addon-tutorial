@@ -1,0 +1,6 @@
+item.tutorial:travel_ration.name=Travel Ration
+tile.tutorial:teaching_stone.name=Teaching Stone
+tile.tutorial:teaching_lamp.name=Teaching Lamp
+tile.tutorial:stone_platform.name=Stone Platform
+entity.tutorial:guide.name=Tutorial Guide
+item.spawn_egg.entity.tutorial:guide.name=Tutorial Guide Spawn Egg

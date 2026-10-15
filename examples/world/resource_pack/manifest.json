@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "教程：粒子与实体挂接",
+    "description": "配合教程第七至第九章使用。结构模板需按正文另行导出。",
+    "uuid": "e690c860-839c-44cc-bad7-ef6175a8d6f1",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      30
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "60ac4b58-3867-4ae2-8c21-84ec1690d8fb",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

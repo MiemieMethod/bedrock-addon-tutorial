@@ -1,0 +1,39 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "tutorial:chalk_plains"
+    },
+    "components": {
+      "minecraft:climate": {
+        "temperature": 0.8,
+        "downfall": 0.4,
+        "snow_accumulation": [0.0, 0.125]
+      },
+      "minecraft:surface_builder": {
+        "builder": {
+          "type": "minecraft:overworld",
+          "top_material": "minecraft:calcite",
+          "mid_material": "minecraft:calcite",
+          "foundation_material": "minecraft:stone",
+          "sea_material": "minecraft:water",
+          "sea_floor_material": "minecraft:gravel",
+          "sea_floor_depth": 7
+        }
+      },
+      "minecraft:tags": {
+        "tags": ["overworld", "animal", "monster", "tutorial_chalk"]
+      },
+      "minecraft:replace_biomes": {
+        "replacements": [
+          {
+            "dimension": "minecraft:overworld",
+            "targets": ["plains"],
+            "amount": 1.0,
+            "noise_frequency_scale": 25
+          }
+        ]
+      }
+    }
+  }
+}

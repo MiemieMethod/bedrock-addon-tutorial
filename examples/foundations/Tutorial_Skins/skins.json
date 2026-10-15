@@ -1,0 +1,12 @@
+{
+    "serialize_name": "tutorial_students",
+    "localization_name": "tutorial_students",
+    "skins": [
+        {
+            "localization_name": "student",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "student.png",
+            "type": "free"
+        }
+    ]
+}

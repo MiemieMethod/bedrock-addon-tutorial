@@ -1,0 +1,120 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "tutorial:guide",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "properties": {
+        "tutorial:working": {
+          "type": "bool",
+          "default": true,
+          "client_sync": true
+        }
+      }
+    },
+    "component_groups": {
+      "tutorial:working": {
+        "minecraft:movement": {
+          "value": 0.2
+        },
+        "minecraft:behavior.random_stroll": {
+          "priority": 6,
+          "speed_multiplier": 1.0
+        }
+      },
+      "tutorial:resting": {
+        "minecraft:movement": {
+          "value": 0
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "tutorial_guide",
+          "mob"
+        ]
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 1.25
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:nameable": {},
+      "minecraft:movement.basic": {},
+      "minecraft:navigation.walk": {
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:jump.static": {},
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:economy_trade_table": {
+        "display_name": "entity.tutorial:guide.name",
+        "table": "trading/guide_trades.json",
+        "new_screen": true
+      },
+      "minecraft:behavior.trade_with_player": {
+        "priority": 1
+      },
+      "minecraft:behavior.look_at_trading_player": {
+        "priority": 2
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/guide.json"
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "tutorial:working"
+          ]
+        },
+        "set_property": {
+          "tutorial:working": true
+        }
+      },
+      "tutorial:work": {
+        "remove": {
+          "component_groups": [
+            "tutorial:resting"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "tutorial:working"
+          ]
+        },
+        "set_property": {
+          "tutorial:working": true
+        }
+      },
+      "tutorial:rest": {
+        "remove": {
+          "component_groups": [
+            "tutorial:working"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "tutorial:resting"
+          ]
+        },
+        "set_property": {
+          "tutorial:working": false
+        }
+      }
+    }
+  }
+}
